@@ -1,9 +1,12 @@
 🚀 Tela de Login Interativa
+
 Uma tela de login moderna e responsiva desenvolvida em HTML, CSS (nativo e customizado) e JavaScript puro, utilizando a estrutura do Bootstrap 5 para estilização e componentes modais.
 
 Este projeto foca em uma experiência de usuário aprimorada, destacando-se por seu fundo gradiente animado (azul, amarelo e verde) e o uso eficiente de modals (janelas pop-up) para feedback de login e recuperação de senha.
 
+
 ✨ Funcionalidades Principais
+
 Fundo Animado: Efeito de fundo gradiente animado (linear-gradient) em loop infinito, criando um visual dinâmico e moderno.
 
 Design Responsivo: Layout totalmente adaptável a diferentes tamanhos de tela, garantido pela integração do Bootstrap 5.
@@ -18,7 +21,9 @@ Recuperação de Senha: Apresenta um modal específico para a recuperação de s
 
 Validação Simples: Uso do atributo required nos campos do formulário para garantir o preenchimento antes da submissão.
 
+
 🛠️ Tecnologias Utilizadas
+
 O projeto foi construído apenas com tecnologias front-end e não requer back-end para a sua execução, focando na demonstração visual e de interação.
 
 HTML5: Estrutura e marcação da página.
@@ -29,7 +34,9 @@ JavaScript: Lógica para manipulação do formulário e controle dos modals do B
 
 Bootstrap 5.3.2: Framework CSS/JS para layout e componentes prontos (modals, formulário, botões).
 
+
 🐳 Deployment com Docker
+
 Como o projeto é estático (HTML/CSS/JS), ele será servido dentro de um contêiner Nginx leve, ideal para ambientes de produção e desenvolvimento.
 
 Dockerfile
@@ -71,17 +78,10 @@ Bash
 
 docker stop login-app
 docker rm login-app
-💻 Execução Local
-Caso não queira usar o Docker, você pode executar o projeto diretamente no seu navegador:
 
-Clone o Repositório:
-
-Bash
-
-git clone https://www.youtube.com/shorts/3mMG25WHLkU
-Abra o Arquivo: Abra o arquivo HTML (por exemplo, index.html) em qualquer navegador.
 
 📄 Estrutura do Código
+
 O projeto é contido em um único arquivo HTML, index.html, que inclui:
 
 As importações do Bootstrap (CSS e JS).
@@ -92,12 +92,13 @@ Os elementos visuais do formulário e os componentes modal.
 
 O bloco de tags <script> com a lógica JavaScript para manipulação dos eventos e modais.
 
+
 👨‍💻 Próximos Passos (Sugestões de Melhoria)
+
 Integração com Backend: Conectar o formulário a um endpoint real de autenticação.
 
 Feedback de Erro: Adicionar mensagens de alerta para credenciais incorretas.
 
 Refatoração CSS: Mover o CSS customizado para um arquivo externo (style.css).
 
-Autor: @rbarcellos84 - Rodrigo de Andrade Barcellos
-
+Autor: Rodrigo Barcellos - rbarcellos84
