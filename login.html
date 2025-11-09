@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Missão Concluída</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-card">
+        
+        <img 
+            src="https://cdn-icons-png.flaticon.com/512/6302/6302076.png" 
+            alt="Símbolo de Login Seguro" 
+            style="width: 100px; height: auto; margin-bottom: 20px;"
+        >
+        
+        <form id="loginForm">
+            <div class="mb-3 text-start">
+                <label for="inputLogin" class="form-label">Login</label>
+                <input type="text" class="form-control" id="inputLogin" required>
+            </div>
+
+            <div class="mb-4 text-start">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Efetuar Login</button>
+        </form>
+
+        <a href="#" class="recovery-link" data-bs-toggle="modal" data-bs-target="#recoveryModal">Recuperar Senha</a>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">✅ Login Efetuado com Sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bem-vindo! Suas credenciais informadas foram:</p>
+                    <ul>
+                        <li>**Login:** <span id="outputLogin"></span></li>
+                        <li>**Password:** <span id="outputPassword"></span></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recoveryModal" tabindex="-1" aria-labelledby="recoveryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recoveryModalLabel">🔑 Recuperação de Senha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <form id="recoveryForm"> 
+                    <div class="modal-body">
+                        <p class="text-center fw-bold text-danger">Vamos recuperando a sua senha!</p>
+                        
+                        <div class="mb-3 text-start">
+                            <label for="inputMail" class="form-label">Informe o seu e-mail e em breve iremos enviar a sua senha.</label>
+                            <input type="email" class="form-control" id="inputMail" required> 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary" id="btnRecoveryOk">Recuperar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
